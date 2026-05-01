@@ -1,0 +1,273 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0e5e36;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .brand-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .brand-img {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .nav .links a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+  }
+
+  .background-image,
+  .item-container-3,
+  .tooltip,
+  .logo-tooltip,
+  .WhatsApp-tooltip {
+    display: none;
+  }
+
+  .main .item-container-3 {
+    display: none;
+  }
+
+  .main {
+    position: relative;
+    left: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sub-intro {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .h2-div {
+    margin-top: -100px;
+  }
+
+  .special-dishes-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .special-item-1,
+  .special-item-2,
+  .special-item-3,
+  .special-item-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .items-block .special-dish-img-1,
+  .items-block .special-dish-img-2,
+  .items-block .special-dish-img-3,
+  .items-block .special-dish-img-4 {
+    width: 200px;
+  }
+
+  .description-div .dish-description-1,
+  .description-div .dish-description-2,
+  .description-div .dish-description-3,
+  .description-div .dish-description-4 {
+    font-size: 1.2rem;
+  }
+
+  .scroll-wrapper .menu-section {
+    position: relative;
+    top: 300px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-section .menu-box {
+    width: 260px;
+    height: 300px;
+    padding: 10px 20px;
+  }
+
+  .menu-box .menu-title {
+    font-size: 20px;
+    padding: 5px 30px;
+    top: -25px;
+  }
+
+  .menu-box .item-name,
+  .menu-box .item-name-meat {
+    padding: 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    right: 10px;
+    top: 48px;
+    line-height: 38px;
+  }
+
+  .item-prices .culom-type,
+  .item-prices .culom-type-meat {
+    top: 10px;
+  }
+
+  .item-type {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .culom-type .prices,
+  .culom-type-meat .prices {
+    font-size: 18px;
+    line-height: 37px;
+    padding: 0px 8px;
+    margin-top: 8px;
+  }
+
+  .Whatsapp-contaner .order-now-title {
+    font-size: 30px;
+  }
+
+  .Whatsapp-contaner .whatsapp-icon {
+    width: 60px;
+  }
+
+  .Whatsapp-numbers .num {
+    font-size: 18px;
+  }
+
+  .contact-section .facebock-cotainer {
+    top: -230px;
+  }
+}
+
+@media (768px < width <= 1190px) {
+  .background-image {
+    display: none;
+  }
+
+  .home-section {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  }
+
+  .items-block .special-dish-img-1,
+  .items-block .special-dish-img-2,
+  .items-block .special-dish-img-3,
+  .items-block .special-dish-img-4 {
+    width: 270px;
+  }
+
+  .description-div .dish-description-1,
+  .description-div .dish-description-2,
+  .description-div .dish-description-3,
+  .description-div .dish-description-4 {
+    font-size: 1.8rem;
+  }
+
+  .scroll-wrapper .menu-section {
+    position: relative;
+    top: 280px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-section .menu-box {
+    width: 350px;
+    height: 350px;
+    padding: 10px 20px;
+  }
+
+  .menu-box .menu-title {
+    font-size: 25px;
+    top: -25px;
+  }
+
+  .menu-box .item-name,
+  .menu-box .item-name-meat {
+    top: 50px;
+    line-height: 45px;
+    font-size: 25px;
+  }
+
+  .item-prices .culom-type,
+  .item-prices .culom-type-meat {
+    top: 10px;
+  }
+
+  .item-type {
+    font-size: 17px;
+  }
+
+  .culom-type .prices,
+  .culom-type-meat .prices {
+    font-size: 23px;
+    line-height: 45px;
+    padding: 0px 8px;
+    margin-top: 10px;
+  }
+
+  .Whatsapp-contaner .order-now-title {
+    font-size: 34px;
+  }
+
+  .Whatsapp-contaner .whatsapp-icon {
+    width: 70px;
+  }
+
+  .Whatsapp-numbers .num {
+    font-size: 24px;
+  }
+
+ 
+}
+
+@media (1190px < width <= 1590px) {
+  
+
+  .items-block .special-dish-img-1,
+  .items-block .special-dish-img-2,
+  .items-block .special-dish-img-3,
+  .items-block .special-dish-img-4 {
+    width: 300px;
+  }
+
+  .description-div .dish-description-1,
+  .description-div .dish-description-2,
+  .description-div .dish-description-3,
+  .description-div .dish-description-4 {
+    font-size: 2rem;
+  }
+
+  .scroll-wrapper .menu-section {
+    position: relative;
+    top: 290px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+ 
+}
+
+@media (width > 1590px) {
+  .scroll-wrapper .menu-section {
+    position: relative;
+    top: 500px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

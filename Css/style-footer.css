@@ -1,0 +1,176 @@
+
+.site-footer {
+  margin-top: auto;
+  position: relative;
+  top: 600px;
+  background-color: #054123;
+  border-top: 2px solid rgba(196, 121, 52, 0.5);
+  padding: 40px 30px 20px;
+  direction: rtl;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  color: white;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-brand-img {
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid #c47934;
+}
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-name {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #f97902;
+}
+
+.footer-slogan {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 14px;
+  color: #c4752c;
+  margin-top: 2px;
+}
+
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-size: 16px;
+  color: #d4d4d4;
+  direction: ltr;
+  text-align: right;
+  line-height: 1.7;
+}
+
+.footer-heading {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #c47934;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-fb-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 16px;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.footer-fb-link:hover {
+  transform: scale(1.08);
+  color: #f97902;
+}
+
+.footer-fb-icon {
+  width: 28px;
+}
+
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 28px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom .dev-page-link {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-bottom .dev-page-link:hover {
+  color: #c47934;
+}
+
+
+@media (max-width: 768px) {
+  .site-footer {
+    top: 350px;
+    padding: 30px 20px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+  }
+
+  .footer-contact p {
+    text-align: center;
+  }
+
+  .footer-fb-link {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (768px < width <= 1190px) {
+  .site-footer {
+    top: 350px;
+  }
+}
+
+@media (1190px < width <= 1590px) {
+  .site-footer {
+    top: 350px;
+  }
+}

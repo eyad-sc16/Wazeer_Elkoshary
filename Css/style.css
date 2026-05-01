@@ -1,0 +1,453 @@
+.home-section {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 715px;
+  object-fit: cover;
+  object-position: middle;
+  opacity: 0.1;
+  z-index: 0;
+  border-bottom: 2px solid white;
+}
+
+.special-dishes-section-backbround-img {
+  position: absolute;
+  top: -160px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1665px;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.intro,
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.h1 {
+  color: white;
+  font-family: "Aref Ruqaa", serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+.sub-intro {
+  font-family: "Aref Ruqaa", serif;
+  color: white;
+  font-size: 20px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.main img {
+  width: 250px;
+}
+
+.item-container,
+.item-container-3 {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #c47934;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.main div:hover {
+  transform: scale(1.05);
+}
+
+.item-img:hover {
+  opacity: 0.9;
+}
+
+.item-name-container {
+  position: absolute;
+  top: 20px;
+  background-color: #905219;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.order-now-container {
+  position: absolute;
+  bottom: 20px;
+  background-color: #905219;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.order-link,
+.dish-name {
+  text-decoration: none;
+  color: white;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 700;
+  background-color: #ad6623;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.dish-name {
+  border: none;
+}
+
+.item-container:hover .order-now-container {
+  opacity: 0.9;
+  width: 240px;
+}
+
+.h2-div {
+  position: relative;
+  top: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.h2 {
+  color: #b85c06;
+  font-family: "Aref Ruqaa", serif;
+  font-size: 60px;
+  margin: 0;
+  z-index: 1;
+}
+
+.special-dishes-section {
+  position: relative;
+  top: 210px;
+  right: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 50px;
+}
+
+.special-item-1,
+.special-item-2,
+.special-item-3,
+.special-item-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  padding: 0 10px;
+}
+
+.special-item-3 {
+  gap: 80px;
+}
+
+.special-dish-img-1,
+.special-dish-img-2,
+.special-dish-img-3,
+.special-dish-img-4 {
+  width: 350px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+  background-color: #ad6623;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.special-dish-img-1:hover,
+.special-dish-img-2:hover,
+.special-dish-img-3:hover,
+.special-dish-img-4:hover {
+  transform: scale(1.08);
+}
+
+.special-dish-img-1,
+.special-dish-img-3 {
+  position: relative;
+  left: 50px;
+}
+
+.special-dish-img-2,
+.special-dish-img-4 {
+  position: relative;
+  right: 60px;
+}
+
+.dish-description-1,
+.dish-description-2,
+.dish-description-3,
+.dish-description-4 {
+  color: #c4752c;
+  font-size: 40px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 700;
+  max-width: 1300px;
+}
+
+.dish-description-3 {
+  margin-left: 50px;
+}
+
+.dish-description-2,
+.dish-description-4 {
+  position: relative;
+  left: 50px;
+}
+
+.special-dish-name {
+  color: #f97902;
+  font-family: "Aref Ruqaa", serif;
+  font-size: 50px;
+  text-align: right;
+}
+
+.description-div {
+  position: relative;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  text-align: right;
+}
+
+.items-block {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.menu-section {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  column-gap: 100px;
+  row-gap: 100px;
+  top: 500px;
+}
+
+.menu-box p,
+.menu-box-meat p {
+  margin: 0;
+}
+
+.menu-box {
+  position: relative;
+  background-color: #c47934;
+  width: 400px;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 0 20px;
+}
+
+.menu-title {
+  position: absolute;
+  font-size: 30px;
+  padding: 5px 30px;
+  background-color: #905219;
+  font-family: "Aref Ruqaa", serif;
+  color: white;
+  top: -28px;
+  white-space: nowrap;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.menu-title:hover {
+  transform: translateX(-50%) scale(1.3);
+}
+
+.item-prices {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 20px;
+}
+
+.item-name,
+.item-name-meat {
+  background-color: #b85c06;
+  padding: 0 10px;
+  border-radius: 13px;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 10px;
+  top: 85px;
+  line-height: 50px;
+}
+
+.culom-type,
+.culom-type-meat {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.item-type {
+  font-weight: 700;
+}
+
+.prices {
+  color: rgb(214, 214, 81);
+  font-family: Roboto;
+  font-size: 30px;
+  margin-top: 10px;
+  line-height: 50px;
+  background-color: #8d541f;
+  padding: 0px 10px;
+}
+
+.the-menu {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Aref Ruqaa", serif;
+  color: #b85c06;
+  margin: 0;
+}
+
+.culom-type-meat {
+  top: 5px;
+}
+
+.item-name-meat {
+  top: 40px;
+}
+
+.order-now-title {
+  padding: 0;
+  margin: 0;
+}
+
+.Whatsapp-contaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/ -1;
+  gap: 30px;
+}
+
+.Whatsapp-num-div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.whatsapp-icon {
+  width: 80px;
+}
+
+.Whatsapp-numbers p {
+  margin: 0;
+  line-height: 35px;
+}
+
+.Whatsapp-numbers {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  color: #d46a07;
+  font-weight: 700;
+}
+
+.order-now-title {
+  font-size: 40px;
+  color: #b85c06;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  cursor: default;
+}
+
+.num,
+.whatsapp-icon,
+.Whatsapp-numbers,
+.order-now-title {
+  transition: all 0.3s ease;
+}
+
+.num:hover,
+.Whatsapp-numbers:hover,
+.whatsapp-icon:hover,
+.order-now-title:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.WhatsApp-icon-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.WhatsApp-tooltip {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  background: #000000;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+}
+
+.WhatsApp-icon-div:hover .WhatsApp-tooltip {
+  opacity: 1;
+}
+
+
+
