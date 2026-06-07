@@ -1,0 +1,131 @@
+body {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(42, 41, 41);
+  min-height: 100vh;
+  font-family: Roboto, Arial, Helvetica, sans-serif, sans-serif;
+  line-height: 1.5;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #363535;
+  padding: 8em 2.5em;
+  border-radius: 15px;
+  gap: 30px;
+}
+
+.dev-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 10px;
+  font-weight: 600;
+  color: gray;
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+.name {
+  font-weight: 700;
+  font-size: 19px;
+  color: white;
+}
+
+.Follow-requist {
+  font-weight: 600;
+}
+
+h1 {
+  color: aliceblue;
+}
+
+.accounts-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.my-accounts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.link {
+  position: relative;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link:hover {
+  transform: scale(1.04);
+}
+.accounts-tooltip {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  color: #000000;
+  padding: 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 11px;
+  position: absolute;
+  top: 120%;
+  transition: opacity 0.4s ;
+}
+.tooltip-link-github,
+.tooltip-link-linkedin{
+  top: 105%;
+}
+.tooltip-link-github {
+  background: #2d3033;
+  box-shadow: 0 2px 7px #848484;
+  color: white;
+}
+.github-logo{
+  width: 4em;
+  height: 4em;
+}
+.tooltip-link-instagram {
+  background: #e1306c;
+  box-shadow: 0 2px 7px #e1306c;
+}
+
+.instagram-logo{
+  width: 3em;
+}
+.tooltip-link-linkedin {
+  background: #0a66c2;
+  box-shadow: 0 2px 7px #0a66c2;
+}
+
+.tooltip-link-linkedin{
+  top: 110%;
+}
+.linkedin-logo{
+  width: 3.5em;
+  height: 3.5em;
+}
+
+.tooltip-link-youtube {
+  background: #f51515;
+  box-shadow: 0 2px 7px #ff0000;
+}
+
+
+.tooltip-link-threads{
+  background: #000000;
+  box-shadow: 0 2px 7px #ffffff;
+  color: white;
+}
+
+
+.link:hover .accounts-tooltip{
+  opacity: 1;
+}

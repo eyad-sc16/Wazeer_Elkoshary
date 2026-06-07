@@ -1,0 +1,136 @@
+.header {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #054123;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 70px;
+  z-index: 100;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.links {
+  position: relative;
+  right: 30px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.links a {
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.main-page-link:hover,
+.special-dish-link:hover,
+.menu-link:hover,
+.contact-link:hover {
+  transform: scale(1.1); /* ✅ */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  left: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Aref Ruqaa", serif;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.logo-tooltip {
+  position: absolute;
+  bottom: -35px;
+  color: white;
+  background: none;
+
+  font-family: "Aref Ruqaa", serif;
+  border-radius: 20px;
+  font-size: 16px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.logo-container:hover .logo-tooltip {
+  opacity: 1;
+}
+
+.links .order-button {
+  font-size: 13px;
+  background-color: #c47934;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 60px;
+  transition: all 0.25s;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  cursor: pointer;
+  
+}
+
+.order-button:hover {
+  opacity: 0.9;
+}
+
+.brand-side {
+  position: relative;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-img {
+  width: 50px;
+}
+
+.tooltip-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  white-space: nowrap;
+  background-color: #c47934;
+  padding: 4px 7px;
+  border-radius: 20px;
+  color: white;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 13px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+
