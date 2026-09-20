@@ -1,57 +1,57 @@
-# وزير الكشري — وزارة الطعم الشعبي
+# Wazeer El-Koshary — Ministry of Street Flavor
 
-موقع مطعم لعرض المنيو وأفضل الأطباق مع إمكانية الطلب عبر واتساب. مبني بـ HTML و CSS و JavaScript خالص (بدون أي مكتبات خارجية).
+A restaurant website that showcases the menu and signature dishes, with ordering through WhatsApp. Built with plain HTML, CSS, and JavaScript (no external libraries).
 
-## المميزات
+## Features
 
-- تصميم متجاوب بالكامل (موبايل / تابلت / ديسكتوب) بأسلوب Mobile-first.
-- قائمة تنقل للموبايل مع قفل تمرير الصفحة.
-- سكرول ناعم مع تعويض ارتفاع الهيدر الثابت.
-- تفعيل لينك القسم الحالي أثناء التمرير (Scroll Spy).
-- ظهور تدريجي للعناصر أثناء السكرول (Scroll Reveal).
-- شريط تقدم السكرول وزر العودة إلى أعلى.
-- احترام إعداد `prefers-reduced-motion` لمستخدمي الحركة المخفّضة.
-- كود JavaScript مبني على Classes (OOP) ومنظّم في مكوّنات مستقلة.
+- Fully responsive design (mobile / tablet / desktop) with a mobile-first approach.
+- Mobile navigation menu with page scroll locking.
+- Smooth scrolling with fixed-header offset compensation.
+- Active section highlighting while scrolling (Scroll Spy).
+- Progressive reveal of elements on scroll (Scroll Reveal).
+- Scroll progress bar and back-to-top button.
+- Respects the `prefers-reduced-motion` user setting.
+- JavaScript organized as OOP classes split into focused components.
 
-## هيكل المشروع
+## Project Structure
 
 ```
 .
-├── index.html            # الصفحة الرئيسية
-├── developer-page.html   # صفحة المطور
+├── index.html            # Main page
+├── developer-page.html   # Developer page
 ├── Css/
-│   ├── base.css          # المتغيرات، إعادة الضبط، الأزرار، الأدوات المشتركة
-│   ├── header.css        # الهيدر والتنقل
-│   ├── sections.css      # الهيرو، الأطباق، المنيو، الطلب
-│   ├── footer.css        # الفوتر
+│   ├── base.css          # Tokens, reset, buttons, shared utilities
+│   ├── header.css        # Header and navigation
+│   ├── sections.css      # Hero, dishes, menu, order
+│   ├── footer.css        # Footer
 │   └── developer-page.css
 ├── Js/
-│   └── main.js           # منطق السكرول والتفاعلات
-├── Images/               # صور الأطباق والشعار
-└── icons/                # الأيقونات
+│   └── main.js           # Scroll logic and interactions
+├── Images/               # Dish images and logo
+└── icons/                # Icons
 ```
 
-## التقنيات
+## Tech Stack
 
-- HTML5 دلالي (Semantic) مع `dir="rtl"` و `lang="ar"`.
-- CSS3: Custom Properties، Flexbox، Grid، `clamp()`.
-- JavaScript ES6+: Classes، IntersectionObserver، requestAnimationFrame.
+- Semantic HTML5 with `dir="rtl"` and `lang="ar"`.
+- CSS3: Custom Properties, Flexbox, Grid, `clamp()`.
+- JavaScript ES6+: Classes, IntersectionObserver, requestAnimationFrame.
 
-## التشغيل محلياً
+## Running Locally
 
-الموقع ثابت بالكامل، فقط افتح `index.html` في المتصفح. ويفضّل تشغيل سيرفر محلي:
+The site is fully static, so you can just open `index.html` in a browser. A local server is recommended:
 
 ```bash
 python -m http.server 5500
 ```
 
-ثم افتح `http://localhost:5500`.
+Then open `http://localhost:5500`.
 
-## المطور
+## Developer
 
 **Eyad Nasser** — Software Developer
-صفحة المطور داخل الموقع: `developer-page.html`
+Developer page inside the site: `developer-page.html`
 
-## الترخيص
+## License
 
-&copy; 2025 وزير الكشري — جميع الحقوق محفوظة.
+&copy; 2025 Wazeer El-Koshary — All rights reserved.
