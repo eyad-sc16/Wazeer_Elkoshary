@@ -2,72 +2,79 @@
 <html lang="en">
 
 <head>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="Css/developer-page.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>developer-center</title>
+  <meta name="description" content="Eyad Nasser — Software Developer. Portfolio and social accounts.">
+  <meta name="theme-color" content="#2a2929">
+  <title>Eyad Nasser | Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/developer-page.css">
 </head>
 
-
 <body>
-  <main>
-    <div class="dev-info">
-      <p class="name">Eyad Nasser — Software Developer</p>
-      <p class="Follow-requist">Building modern and efficient web experiences.
-      </p>
-      <p class="look">You can also check out my projects on GitHub.</p>
-    </div>
-    <div class="accounts-container">
-      <h1>Follow Me</h1>
-      <div class="my-accounts">
-        <div class="github-div link">
-          
-          <a href="https://github.com/eyad-sc16" target="_blank" class="github-link"> <img class="link-logo github-logo"
-              itemprop="contentUrl" src="icons/github-logo.png" alt="github" width="50" height="50">
+  <main class="dev-card">
+    <header class="dev-info">
+      <p class="dev-name">Eyad Nasser</p>
+      <p class="dev-role">Software Developer</p>
+      <p class="dev-bio">Building modern and efficient web experiences.</p>
+      <p class="dev-note">You can also check out my projects on GitHub.</p>
+    </header>
+
+    <section class="accounts">
+      <h1 class="accounts__title">Follow Me</h1>
+      <ul class="accounts__list">
+        <li class="account">
+          <a class="account__link" href="https://github.com/eyad-sc16" target="_blank" rel="noopener"
+            aria-label="GitHub">
+            <img class="account__logo account__logo--github" src="icons/github-logo.png" alt="GitHub" width="50"
+              height="50">
           </a>
-          <span class="tooltip-link-github accounts-tooltip">Github</span>
-        </div>
-        <div class="instagram-div link">
-          <a href="https://www.instagram.com/eyadsc15?igsh=MXBwcXJhMmQweW81Yg==" target="_blank"
-            class="instagram-link"><img class="link-logo instagram-logo" itemprop="contentUrl"
-              src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg" alt="instagram" width="50" height="50">
+          <span class="account__tooltip account__tooltip--github">Github</span>
+        </li>
+
+        <li class="account">
+          <a class="account__link"
+            href="https://www.instagram.com/eyadsc15?igsh=MXBwcXJhMmQweW81Yg==" target="_blank" rel="noopener"
+            aria-label="Instagram">
+            <img class="account__logo" src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg" alt="Instagram"
+              width="50" height="50">
           </a>
-          <span class="tooltip-link-instagram accounts-tooltip">Instagram</span>
-        </div>
+          <span class="account__tooltip account__tooltip--instagram">Instagram</span>
+        </li>
 
-        <div class="linkedin-div link">
-          <a href="https://www.linkedin.com/in/eyad-nasser-136041333?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-            target="_blank" class="linkedin-link">
-            <img class="link-logo linkedin-logo" itemprop="contentUrl" src="https://www.svgrepo.com/show/448234/linkedin.svg"
-              alt="linkedin SVG File" width="50" height="50">
-
+        <li class="account">
+          <a class="account__link"
+            href="https://www.linkedin.com/in/eyad-nasser-136041333?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img class="account__logo" src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="50"
+              height="50">
           </a>
-          <span class="tooltip-link-linkedin accounts-tooltip">Linkedin</span>
-        </div>
+          <span class="account__tooltip account__tooltip--linkedin">Linkedin</span>
+        </li>
 
-        <div class="youtube-div link">
-          <a href="https://youtube.com/@eyadnasser3206?si=E4FY5o71IweOU2nk" target="_blank" class="youtube-link"><img
-              class="link-logo youtube-logo" itemprop="contentUrl" src="https://www.svgrepo.com/show/475700/youtube-color.svg"
-              alt="youtube Color SVG File" width="50" height="50">
-
+        <li class="account">
+          <a class="account__link" href="https://youtube.com/@eyadnasser3206?si=E4FY5o71IweOU2nk" target="_blank"
+            rel="noopener" aria-label="YouTube">
+            <img class="account__logo" src="https://www.svgrepo.com/show/475700/youtube-color.svg" alt="YouTube"
+              width="50" height="50">
           </a>
-          <span class="tooltip-link-youtube accounts-tooltip">Youtube</span>
-        </div>
+          <span class="account__tooltip account__tooltip--youtube">Youtube</span>
+        </li>
 
-        <div class="threads-div link">
-          <a href="https://www.threads.com/@eyadsc15" target="_blank" class="threads-link"><img class="link-logo threads-logo"
-              itemprop="contentUrl" src="icons/threads-logo.png" alt="threads.png" width="50" height="50">
-            
+        <li class="account">
+          <a class="account__link" href="https://www.threads.com/@eyadsc15" target="_blank" rel="noopener"
+            aria-label="Threads">
+            <img class="account__logo" src="icons/threads-logo.png" alt="Threads" width="50" height="50">
           </a>
-          <span class="tooltip-link-threads accounts-tooltip">Threads</span>
-        </div>
-      </div>
+          <span class="account__tooltip account__tooltip--threads">Threads</span>
+        </li>
+      </ul>
+    </section>
 
-    </div>
-    </div>
+    <a class="dev-back" href="index.html">&larr; Back to site</a>
   </main>
 </body>
 
